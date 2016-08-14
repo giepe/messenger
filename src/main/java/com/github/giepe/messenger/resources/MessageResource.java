@@ -1,8 +1,7 @@
-package messenger.resources;
+package com.github.giepe.messenger.resources;
 
-import messenger.model.Message;
-import messenger.services.MessageService;
-import org.glassfish.jersey.server.model.ParamQualifier;
+import com.github.giepe.messenger.model.Message;
+import com.github.giepe.messenger.services.MessageService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

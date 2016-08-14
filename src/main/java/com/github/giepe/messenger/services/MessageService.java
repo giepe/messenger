@@ -1,9 +1,8 @@
-package messenger.services;
+package com.github.giepe.messenger.services;
 
-import messenger.database.DatabaseClass;
-import messenger.model.Message;
+import com.github.giepe.messenger.database.DatabaseClass;
+import com.github.giepe.messenger.model.Message;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

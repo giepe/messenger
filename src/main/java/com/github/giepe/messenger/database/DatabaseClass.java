@@ -1,7 +1,7 @@
-package messenger.database;
+package com.github.giepe.messenger.database;
 
-import messenger.model.Message;
-import messenger.model.Profile;
+import com.github.giepe.messenger.model.Message;
+import com.github.giepe.messenger.model.Profile;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

@@ -1,4 +1,4 @@
-package messenger.model;
+package com.github.giepe.messenger.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;

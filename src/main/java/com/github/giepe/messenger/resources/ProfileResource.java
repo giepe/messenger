@@ -1,11 +1,10 @@
-package messenger.resources;
+package com.github.giepe.messenger.resources;
 
-import messenger.model.Profile;
-import messenger.services.ProfileService;
+import com.github.giepe.messenger.model.Profile;
+import com.github.giepe.messenger.services.ProfileService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

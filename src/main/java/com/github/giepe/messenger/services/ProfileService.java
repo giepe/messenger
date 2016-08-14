@@ -1,7 +1,7 @@
-package messenger.services;
+package com.github.giepe.messenger.services;
 
-import messenger.database.DatabaseClass;
-import messenger.model.Profile;
+import com.github.giepe.messenger.database.DatabaseClass;
+import com.github.giepe.messenger.model.Profile;
 import java.util.*;
 
 /**
