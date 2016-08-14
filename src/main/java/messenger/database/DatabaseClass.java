@@ -4,6 +4,7 @@ import messenger.model.Message;
 import messenger.model.Profile;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -11,13 +12,13 @@ import java.util.Map;
  */
 public class DatabaseClass {
     private static Map<Long, Message> messages = new HashMap<>();
-    private static Map<Long, Profile> profiles = new HashMap<>();
+    private static LinkedHashMap<String, Profile> profiles = new LinkedHashMap<>();
 
     public static Map<Long, Message> getMessages() {
         return messages;
     }
 
-    public static Map<Long, Profile> getProfiles() {
+    public static LinkedHashMap<String, Profile> getProfiles() {
         return profiles;
     }
 }

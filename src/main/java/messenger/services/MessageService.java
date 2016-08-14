@@ -26,7 +26,11 @@ public class MessageService {
     }
 
     public Message getMessage(Long id) {
-        return this.messages.get(id);
+        if (this.messages.get(id) == null) {
+            return null;
+        } else {
+            return this.messages.get(id);
+        }
     }
 
     public Message addMessage(Message message) {
@@ -37,8 +41,12 @@ public class MessageService {
     }
 
     public Message updateMessage(Message message) {
-        this.messages.put(message.getId(), message);
-        return messages.get(message.getId());
+        if (message.getId() <= 0) {
+            return null;
+        } else {
+            this.messages.put(message.getId(), message);
+            return messages.get(message.getId());
+        }
     }
 
     public String deleteMessage(Long messageId) {

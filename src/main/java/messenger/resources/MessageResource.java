@@ -17,13 +17,13 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_XML)
 public class MessageResource {
 
-    MessageService msgservice = new MessageService();
+    MessageService messageService = new MessageService();
 
     @GET
 //    @Produces(MediaType.APPLICATION_XML)
 //    @Produces(MediaType.APPLICATION_JSON)
     public List<Message> getMessages() {
-        return msgservice.getAllMessages();
+        return messageService.getAllMessages();
     }
 
     @GET
@@ -31,28 +31,28 @@ public class MessageResource {
 //    @Produces(MediaType.APPLICATION_XML)
 //    @Produces(MediaType.APPLICATION_JSON)
     public Message getMessage(@PathParam("messageId") Long id) {
-        return msgservice.getMessage(id);
+        return messageService.getMessage(id);
     }
 
     @POST
 //    @Consumes(MediaType.APPLICATION_XML)
 //    @Produces(MediaType.APPLICATION_XML)
     public Message addMessage(Message message) {
-        return msgservice.addMessage(message);
+        return messageService.addMessage(message);
     }
 
     @PUT
 //    @Consumes(MediaType.APPLICATION_XML)
 //    @Produces(MediaType.APPLICATION_XML)
     public Message updateMessage(Message message) {
-        return msgservice.updateMessage(message);
+        return messageService.updateMessage(message);
     }
 
     @DELETE
 //    @Consumes(MediaType.APPLICATION_XML)
 //    @Produces(MediaType.APPLICATION_XML)
     public String deleteMessage(Message message) {
-        return msgservice.deleteMessage(message.getId());
+        return messageService.deleteMessage(message.getId());
     }
 
 }

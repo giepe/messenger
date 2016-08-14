@@ -12,7 +12,6 @@ public class Profile {
     private String profileName;
     private String firstName;
     private String lastName;
-    private Date created;
 
     public Profile(){
     }
@@ -51,12 +50,4 @@ public class Profile {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public Date getCreated() {
-        return created;
-    }
-    public void setCreated(Date created) {
-        this.created = created;
-    }
-
 }
