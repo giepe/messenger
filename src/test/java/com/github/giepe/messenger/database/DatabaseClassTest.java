@@ -2,30 +2,23 @@ package com.github.giepe.messenger.database;
 
 import com.github.giepe.messenger.model.Message;
 import com.github.giepe.messenger.model.Profile;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Piotrek on 2016-08-14.
  */
 public class DatabaseClassTest {
-    private Map<Long, Message> messages;
-    private LinkedHashMap<String, Profile> profiles;
-
-    @Before
-    public void setUp() {
-        messages = DatabaseClass.getMessages();
-        profiles = DatabaseClass.getProfiles();
-    }
 
     @Test
     public void getMessages() throws Exception {
+        Map<Long, Message> messages = DatabaseClass.getMessages();
+
         Message message1 = new Message(1, "message 1", "author 1", new Date());
         Message message2 = new Message(2, "message 2", "author 2", new Date());
 
@@ -39,6 +32,8 @@ public class DatabaseClassTest {
 
     @Test
     public void getProfiles() throws Exception {
+        LinkedHashMap<String, Profile> profiles = DatabaseClass.getProfiles();
+
         Profile profile1 = new Profile(1L, "profile 1", "John", "Doe");
         Profile profile2 = new Profile(2L, "profile 2", "Adam", "Smith");
 
